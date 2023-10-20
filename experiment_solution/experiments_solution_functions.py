@@ -148,11 +148,11 @@ def t_test(gp1, gp2, alternative='two-sided', correction=correction): #other opt
 #     tTest_df = tTest
     
     p_val = tTest.at['T-test', 'p-val']
-    p_val = p_val
+    p_val = p_val.round(4)
     
     print('t-test p_value is: {} '.format(tTest.at['T-test', 'p-val']))
 
-    if p_val < 0.05: #80% confidence level #make this a variable instead of hard coded
+    if p_val < 0.05: #95% confidence level #make this a variable instead of hard coded
         return 'STATISTICAL DIFFERENCE between group {} (mean = {}) and group {} (mean = {}) with p-value of {}'.format(gp1.name, gp1_average, gp2.name, gp2_average, p_val)
 
     else:

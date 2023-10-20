@@ -30,7 +30,7 @@ def bg_color(result):
 def main():
     # Set app title
     st.markdown(
-        f"<h1 style='text-align: left; color: green;'>justDice Statistical Test Solution</h1>",
+        f"<h1 style='text-align: left; color: green;'>A/B Test Solution</h1>",
         unsafe_allow_html=True
     )
 
