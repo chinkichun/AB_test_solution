@@ -34,14 +34,14 @@ def main():
         unsafe_allow_html=True
     )
 
-    st.markdown('''
-        *Upload csv in format*: **:blue[[Test Group id | Group Member | Metric 1 | Metric 2 | Metric n...]]**''')
+    # st.markdown('''
+    #     *Upload csv in format*: **:blue[[Test Group id | Group Member | Metric 1 | Metric 2 | Metric n...]]**''')
 
     # st.title('Statistical Test Solution')
     
     
     # Create a file uploader
-    file = st.file_uploader("Upload a CSV file", type=["csv"])
+    file = st.file_uploader("Upload a CSV file in format: **:blue[[Test Group id | Group Member | Metric 1 | Metric 2 | Metric n...]]**", type=["csv"])
     
     # Add a "Go" button
     if st.button('Run Test'):
