@@ -34,6 +34,9 @@ def main():
         unsafe_allow_html=True
     )
 
+    st.markdown('''
+        *Upload csv in format*: **:blue[[Test Group id | Group Member | Metric 1 | Metric 2 | Metric n...]]**''')
+
     # st.title('Statistical Test Solution')
     
     
