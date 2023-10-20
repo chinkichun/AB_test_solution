@@ -152,7 +152,7 @@ def t_test(gp1, gp2, alternative='two-sided', correction=correction): #other opt
     
     print('t-test p_value is: {} '.format(tTest.at['T-test', 'p-val']))
 
-    if p_val <= 0.2: #80% confidence level #make this a variable instead of hard coded
+    if p_val < 0.05: #80% confidence level #make this a variable instead of hard coded
         return 'STATISTICAL DIFFERENCE between group {} (mean = {}) and group {} (mean = {}) with p-value of {}'.format(gp1.name, gp1_average, gp2.name, gp2_average, p_val)
 
     else:
